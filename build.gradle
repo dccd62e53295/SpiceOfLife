@@ -7,7 +7,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3+'
     }
 }
 
@@ -61,4 +61,15 @@ processResources {
         exclude '**/*.info'
         exclude 'example/**.json'
     }
+}
+
+task deobfJar(type: Jar) {
+    from sourceSets.main.output
+    classifier = 'deobf'
+}
+
+artifacts {
+    archives sourceJar
+    archives deobfJar
+    archives jar
 }
