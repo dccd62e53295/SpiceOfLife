@@ -10,16 +10,16 @@ sources
 # Created by https://www.gitignore.io/api/gradle,intellij,eclipse,windows,osx,linux
 
 ### Gradle ###
-gradle/
+#gradle/
 .gradle/
 build/
-gradlew
+#gradlew
 
 # Ignore Gradle GUI config
 gradle-app.setting
 
 # Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
+#!gradle-wrapper.jar
 
 # Cache of project
 .gradletasknamecache
